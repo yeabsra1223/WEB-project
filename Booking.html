@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineBook | Booking</title>
+</head>
+<body>
+
+    <h1>CineBook</h1>
+    <h2>Book Your Tickets</h2>
+    <p>Complete the form below to reserve your cinema experience.</p>
+
+    <form>
+
+        <fieldset>
+            <legend>Customer Information</legend>
+
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" required>
+            <br><br>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+            <br><br>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone">
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Movie Selection</legend>
+
+            <label for="movie">Select a Movie:</label>
+            <select id="movie" name="movie" required>
+                <option value="">Choose a movie</option>
+                <option value="avengers">Avengers: Doomsday</option>
+                <option value="iceage">Ice Age: Boiling Point</option>
+                <option value="spiderman">Spider-Man: Brand New Day</option>
+            </select>
+            <br><br>
+
+            <label for="cinema">Select a Cinema:</label>
+            <select id="cinema" name="cinema" required>
+                <option value="">Choose a cinema</option>
+                <option value="century">Century Cinema</option>
+                <option value="gast">GAST Cinema</option>
+                <option value="vamdas">Vamdas Entertainment</option>
+                <option value="alem">Alem Cinema</option>
+                <option value="ambassador">Ambassador Cinema</option>
+            </select>
+            <br><br>
+
+            <label for="date">Select a Date:</label>
+            <input type="date" id="date" name="date" required>
+            <br><br>
+
+            <label for="time">Select a Time:</label>
+            <input type="time" id="time" name="time" required>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Ticket Information</legend>
+
+            <label for="seats">Number of Tickets:</label>
+            <input type="number" id="seats" name="seats" min="1" max="10" required>
+            <br><br>
+
+            <p>Select Ticket Type:</p>
+
+            <input type="radio" id="standard" name="ticket" value="standard">
+            <label for="standard">Standard</label>
+
+            <input type="radio" id="vip" name="ticket" value="vip">
+            <label for="vip">VIP</label>
+
+            <input type="radio" id="student" name="ticket" value="student">
+            <label for="student">Student</label>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Payment Preference</legend>
+
+            <input type="radio" id="telebirr" name="payment" value="telebirr">
+            <label for="telebirr">Telebirr</label>
+
+            <input type="radio" id="cbe" name="payment" value="cbe">
+            <label for="cbe">CBE Birr</label>
+
+            <input type="radio" id="cash" name="payment" value="cash">
+            <label for="cash">Pay at Cinema</label>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Additional Information</legend>
+
+            <label for="requests">Special Requests:</label>
+            <br>
+            <textarea id="requests" name="requests" rows="4" cols="40"></textarea>
+            <br><br>
+
+            <input type="checkbox" id="terms" name="terms" required>
+            <label for="terms">I agree to the terms and conditions.</label>
+        </fieldset>
+
+        <br>
+
+        <input type="submit" value="Confirm Booking">
+        <input type="reset" value="Clear Form">
+
+    </form>
+
+</body>
+</html>
