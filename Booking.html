@@ -8,8 +8,17 @@
 </head>
 <body>
 
+  <header>
     <h1>CineBook</h1>
     <h2>Book Your Tickets</h2>
+    </header>
+
+        <nav>
+        <a href="index.html">Home</a> |
+        <a href="cinemas.html">Cinemas</a> |
+        <a href="contact.html">Contact</a>
+    </nav>
+    <main>
     <p>Complete the form below to reserve your cinema experience.</p>
 
     <form>
@@ -40,6 +49,9 @@
                 <option value="avengers">Avengers: Doomsday</option>
                 <option value="iceage">Ice Age: Boiling Point</option>
                 <option value="spiderman">Spider-Man: Brand New Day</option>
+                <option value="masters of the universe">Masters of the Universe</option>
+                <option value="supergirl">Supergirl</option>
+                <option value="the odyssey">The Odyssey</option>
             </select>
             <br><br>
 
@@ -51,6 +63,7 @@
                 <option value="vamdas">Vamdas Entertainment</option>
                 <option value="alem">Alem Cinema</option>
                 <option value="ambassador">Ambassador Cinema</option>
+                <option value="eliana">Eliana Cinema</option>
             </select>
             <br><br>
 
@@ -73,7 +86,7 @@
 
             <p>Select Ticket Type:</p>
 
-            <input type="radio" id="standard" name="ticket" value="standard">
+            <input type="radio" id="standard" name="ticket" value="standard" required>
             <label for="standard">Standard</label>
 
             <input type="radio" id="vip" name="ticket" value="vip">
@@ -118,6 +131,12 @@
         <input type="reset" value="Clear Form">
 
     </form>
+    </main>
+<hr>
+    <footer>
+        <p>&copy; 2026 CineBook. All Rights Reserved.</p>
+        <p>Discover Movies. Explore Cinemas. Enjoy the Experience.</p>
+    </footer>
 
 </body>
 </html>
